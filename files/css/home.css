@@ -1,0 +1,113 @@
+body {
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: url("../src/map.png");
+    background-position: 0 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    font-family: Roboto, sans-serif;
+    overflow-x: hidden;
+}
+
+#home-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title-bg {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../src/title-back.png");
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50vw;
+    height: 50vh;
+}
+
+#home-title {
+    text-align: center;
+    font-size: 200%;
+}
+
+#home-map{
+    background: none;
+    width: 100vw;
+    height: 100vh;
+}
+
+#description {
+    background-color: white;
+}
+
+#apothegm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#bibimbap{
+    align-self: flex-end;
+    object-fit: contain;
+    height: 100%;
+}
+
+#description-title {
+    align-self: center;
+}
+
+#apothegm-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 15%;
+    margin-right: 2%;
+}
+
+.country-hit-box {
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.country-title {
+    color: black;
+    text-align: center;
+    font-size: 200%;
+}
+
+#Canada-box {
+    top: 109vh;
+    left: 6vw;
+    width: 25vw;
+    height: 21vh;
+}
+
+#India-box {
+    top: 140vh;
+    left: 69vw;
+    width: 9vw;
+    height: 22vh;
+}
+
+#Malaysia-box {
+    top: 161vh;
+    left: 80vw;
+    width: 7vw;
+    height: 4vh;
+}
+
+#footer {
+    background-color: grey;
+}

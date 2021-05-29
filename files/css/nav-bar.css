@@ -1,0 +1,74 @@
+#nav-bar {
+    /*old nav bar (still nice)*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*width: 100%;*/
+    /*height: 10vh;*/
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*justify-content: right;*/
+    /*align-items: center;*/
+
+    background-image: url("../src/menu/neutral.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position: sticky;
+    left: 90vw;
+    top: 13vh;
+
+    z-index: 863;
+
+    width: 5vw;
+    height: 5vw;
+
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+    margin-left: 10vw;
+}
+
+#nav-bar:hover{
+    background-image: url("../src/menu/happy.png");
+}
+
+.nav-bar-btn {
+    border: 1px solid dimgrey;
+    background: none;
+    color: dimgrey;
+    border-radius: 10px;
+    height: 5vh;
+    margin-right: 8px;
+}
+
+.nav-bar-btn:hover {
+    background: #d5d5d5;
+}
+
+.nav-bar-link{
+    text-align: right;
+    color: #EFC11C;
+
+    text-decoration: none;
+    visibility: hidden;
+}
+
+#Canada-Link{
+    transform: rotate(45deg) translateX(-4.5vw) translateY(-2vh);
+}
+
+#Malaysia-Link{
+    transform: rotate(25deg) translateX(-6vw) translateY(-4vh);
+}
+
+#India-Link{
+    transform: rotate(0deg) translateX(-6vw) translateY(-8vh);
+}
+
+#News-Link{
+    transform: rotate(-25deg) translateX(-4vw) translateY(-10vh);
+}
+
+#Home-Link{
+    transform: rotate(-50deg) translateX(0vw) translateY(-10vh);
+}

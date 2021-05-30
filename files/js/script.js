@@ -80,7 +80,7 @@ const setClassOpacity = (className, opacity) => {
 
 const showClass = (className) => {
     let elements = document.getElementsByClassName(className);
-    console.log(className);
+    // console.log(className);
     for (let i = 0; i < elements.length; i++) {
         elements[i].style.visibility = "visible";
     }
@@ -119,14 +119,14 @@ const handleNavBarClick = () => {
         showClass("nav-bar-link");
     }
     navBarShow = !navBarShow;
-    console.log(navBarShow);
+    // console.log(navBarShow);
 }
 document.getElementById("nav-bar").onclick = handleNavBarClick;
 document.getElementById("nav-bar").onmouseover = onMenuHover;
 document.getElementById("nav-bar").onmouseleave = () => {document.getElementById("nav-bar").style.backgroundImage = "url(\"../src/menu/neutral.png\")";};
 
 const onCountryHover = (country) => {
-    console.log("hover");
+    // console.log("hover");
     document.body.style.backgroundImage = "url(\"../src/" + country + ".png\")";
     document.getElementById("nav-bar").style.backgroundImage = "url(\"../src/menu/" + country + ".png\")";
 }
@@ -162,7 +162,13 @@ const isIn = (mouse, country) => {
         mouse.y < (country.y + country.h);
 };
 
-document.getElementById("home-map").onmousemove = (e) =>{
+
+
+const onCountryClick = (country) => {
+    window.location.href = "../html/" + country + ".html";
+};
+
+const mapEvent = (e) => {
     let c = {
         w : window.innerWidth,
         h : window.innerHeight
@@ -174,20 +180,21 @@ document.getElementById("home-map").onmousemove = (e) =>{
     for(let i in countryPositions){
         // console.log(countryPositions[i]);
         if(isIn(pos, countryPositions[i])){
-            onCountryHover(i);
-            countryPositions[i].wasIn = true;
-        }else if(countryPositions[i].wasIn){
+            if (e.type === "mousemove"){
+                onCountryHover(i);
+                countryPositions[i].wasIn = true;
+            }else if (e.type === "click"){
+                onCountryClick(i);
+            }
+        }else if(countryPositions[i].wasIn && e.type === "mousemove"){
             restBackground();
             countryPositions[i].wasIn = false;
         }
     }
-};
+}
 
-const onCountryClick = (country) => {
-    window.location.href = "../html/" + country + ".html";
-};
-
-document.getElementById("Canada-box").onclick = () => onCountryClick("Canada");
-document.getElementById("India-box").onclick = () => onCountryClick("India");
-document.getElementById("Malaysia-box").onclick = () => onCountryClick("Malaysia");
-
+document.getElementById("home-map").onclick = mapEvent;
+document.getElementById("home-map").onmousemove = mapEvent;
+document.getElementById("Canada-title").onclick = () => onCountryClick("Canada");
+document.getElementById("India-title").onclick = () => onCountryClick("India");
+document.getElementById("Malaysia-title").onclick = () => onCountryClick("Malaysia");

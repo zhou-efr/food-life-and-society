@@ -130,17 +130,64 @@ const onCountryHover = (country) => {
     document.body.style.backgroundImage = "url(\"../src/" + country + ".png\")";
     document.getElementById("nav-bar").style.backgroundImage = "url(\"../src/menu/" + country + ".png\")";
 }
-document.getElementById("Canada-box").onmouseover = () => onCountryHover("Canada");
-document.getElementById("Canada-box").onmouseleave = restBackground;
-document.getElementById("India-box").onmouseover = () => onCountryHover("India");
-document.getElementById("India-box").onmouseleave = restBackground;
-document.getElementById("Malaysia-box").onmouseover = () => onCountryHover("Malaysia");
-document.getElementById("Malaysia-box").onmouseleave = restBackground;
+
+const countryPositions = {
+  Canada: {
+      x: 8.6,
+      y: 4.4,
+      w: 22.7,
+      h: 22.1,
+      wasIn: false
+  },
+  India: {
+      x: 69.9,
+      y: 31.2,
+      w: 9.4,
+      h: 18.6,
+      wasIn: false
+  },
+  Malaysia: {
+      x: 81.4,
+      y: 50.1,
+      w: 6.5,
+      h: 3.9,
+      wasIn: false
+  }
+};
+
+const isIn = (mouse, country) => {
+    return country.x < mouse.x &&
+        mouse.x < (country.x + country.w) &&
+        country.y < mouse.y &&
+        mouse.y < (country.y + country.h);
+};
+
+document.getElementById("home-map").onmousemove = (e) =>{
+    let c = {
+        w : window.innerWidth,
+        h : window.innerHeight
+    };
+    let pos = {x: (e.clientX/c.w)*100, y: (e.clientY/c.h)*100};
+    // console.log(c);
+    // console.log(pos);
+
+    for(let i in countryPositions){
+        // console.log(countryPositions[i]);
+        if(isIn(pos, countryPositions[i])){
+            onCountryHover(i);
+            countryPositions[i].wasIn = true;
+        }else if(countryPositions[i].wasIn){
+            restBackground();
+            countryPositions[i].wasIn = false;
+        }
+    }
+};
 
 const onCountryClick = (country) => {
     window.location.href = "../html/" + country + ".html";
-}
+};
 
 document.getElementById("Canada-box").onclick = () => onCountryClick("Canada");
 document.getElementById("India-box").onclick = () => onCountryClick("India");
 document.getElementById("Malaysia-box").onclick = () => onCountryClick("Malaysia");
+

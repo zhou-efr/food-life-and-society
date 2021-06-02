@@ -8,7 +8,7 @@ header {
     position: absolute;
     width: 916px;
     height: 126px;
-    top: 10%;
+    top: 11vh;
 
     background: #F5DA77;
     border-radius: 25px;
@@ -25,6 +25,7 @@ form {
 
 body {
     width: 75%;
+    height :100%;
     margin-left: 12.5%;
     overflow: scroll;
     display: flex;
@@ -57,7 +58,6 @@ label {
     margin: 10px;
     text-transform: uppercase;
     border: none;
-    box-shadow: 1px 1px 2px dimgrey;
     padding: 5px;
 }
 
@@ -114,16 +114,17 @@ input:invalid {
     background-color: #B6B39F;
 
     padding-top: 15vh;
-    padding-bottom 50px;
+    padding-bottom : 50px;
 
-    height: 45vh;
+    height: 70vh;
     width: 100vw;
     position: absolute;
     left: 0;
-    top: 20vh;
+    top: 25vh;
 }
 
 td {
+    z-index: 100;
     margin: 10px;
     justify-content: center;
     width : 30% ;
@@ -152,21 +153,15 @@ td {
 }
 
 #btn-back{
-    background-image: url("../src/btn/prev.png");
-    background-size: 200px;
-    background-color: #B6B39F;
     background-repeat: no-repeat;
     padding: 5px;
-    font-size 30px;
+    font-size : 30px;
 
     border: none;
 }
 
 #btn-forward{
-    background-image: url("../src/btn/next.png");
-    background-color: #B6B39F;
-    background-size: 200px;
-    background-repeat: no-repeat;
+    background-repeat : no-repeat;
     font-size : 30px;
     padding: 5px;
 
@@ -178,35 +173,39 @@ td {
 }
 
 #title{
+    position : absolute;
+    top : 5px;
     font-style: normal;
     font-weight: normal;
     font-size: 50px;
     line-height: 71px;
     text-align: center;
 
+
 }
 
 #leftPart{
     position: absolute;
-    width: 419px;
-    height: 529px;
-    left: 473px;
-    top: 783px;
+    width: 43vw;
+    height: 60vh;
+    left: -3vh;
+    top: 10vh;
+    z-index : 1;
 
-    background: rgba(239, 193, 28, 0.8);
+    background-color: #E4BE36;
     box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
-    transform: matrix(0, -1, -1, 0, 0, 0);
 
     justify-content: end;
 }
 
 #rightPart{
     position: absolute;
-    width: 853px;
-    height: 419px;
-    left: 549px;
-    top: 364px;
+    width: 53vw;
+    height: 60vh;
+    right: -3vh;
+    top: 10vh;
+    z-index : 1;
 
     background: #FFFFFF;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -215,6 +214,9 @@ td {
     justify-content : start;
 }
 
+#bothParts{
+    flex-flow : row;
+}
 #add{
     /* background-image : url("../src/btn/register.png");
     background-size : ; */

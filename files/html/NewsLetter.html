@@ -16,44 +16,51 @@
         <h4 id="News-Link"><a class="nav-bar-link" href="./NewsLetter.html">NewsLetter</a></h4>
         <h4 id="Home-Link"><a class="nav-bar-link" href="./index.html">Home</a></h4>
     </div>
+    <div id="title">
+        Inscris toi à la Newsletter !
+    </div>
     <header>
         <div class="formbutton" id="formbutton">
             <form action="/my-handling-form-page" method="post">
                 <div class="input-item">
-                    <label for="fname"> First Name :</label>
-                    <input class="text-input" type="text" required placeholder="Panda" id="fname" name="user_fname">
+                    <label for="fname"></label>
+                    <input class="text-input" type="text" required placeholder="Name" id="fname" name="user_fname">
                 </div>
                 <div class="input-item">
-                    <label for="lname"> Last Name :</label>
-                    <input class="text-input" type="text" required placeholder="Panda" id="lname" name="user_lname">
+                    <label for="lname"></label>
+                    <input class="text-input" type="text" required placeholder="Last Name" id="lname" name="user_lname">
                 </div>
                 <div class="input-item">
-                    <label for="mail">e-mail:</label>
-                    <input class="email-input" type="email" required placeholder="panda@efrei.net" id="mail" name="user_mail">
+                    <label for="mail"></label>
+                    <input class="email-input" type="email" required placeholder="Email Adress" id="mail" name="user_mail">
                 </div>
             </form>
             <div class="buttons">
                 <div class="button">
-                    <button class="headerButton" type="submit" id="add"> Add (10) </button>
+                    <input class="headerButton" type="image" id="image" alt="reset" src="../src/btn/register.png"></input>
                 </div>
                 <div class="button">
-                    <button class="headerButton" type="reset" id="reset"> Remove all </button>
+                    <input class="headerButton" type="image" id="image" alt="reset" src="../src/btn/clear.png" width="10" height="10"></input>
                 </div>
             </div>
         </div>
     </header>
     <main class="mainContent" id="mainContent">
         <table id="listOfNameWhatALongIdForUHugo">
-            <tr id="legend">
+            <tr id="bothParts">
                 <!--just to remember, you can add multiple classes-->
-                <td class="firstname">First Name</td>
-                <td class="lastname">Last Name</td>
-                <td class="email">Email</td>
+                <div id = "leftPart">
+                    <td class="firstname">First Name</td>
+                    <td class="lastname">Last Name</td>
+                </div>
+                <div id = "leftPart">
+                    <td class="email">Email</td>
+                </div>
             </tr>
         </table>
         <div class="navigationButtons" >
-            <button id="btn-back">prev</button>
-            <button id="btn-forward">next</button>
+            <button id="btn-back">go back</button>
+            <button id="btn-forward">go next</button>
         </div>
     </main>
     <footer class="footer">

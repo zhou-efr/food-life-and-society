@@ -1,21 +1,53 @@
 let navBar = document.getElementById("navbar");
 // navBar.style.opacity = '0';
 
-const navBarOpacity = () => {
-    let navBar = document.getElementById("navbar");
-    let opacity = (window.pageYOffset / window.innerHeight);
-    navBar.style.backgroundColor = "rgba(245,245,245," + (((opacity > 1)?1:opacity).toString()) + ")";
-    navBar.style.top = window.pageYOffset.toString() + "px";
-    // console.log("rgba(245,245,245," + (((opacity > 1)?1:opacity).toString()) + ")");
-}
-
-const onScroll = (e) => {
-
-    if(document.getElementById("html-balisa").scrollTop < window.innerHeight){
-
+const countryPositions = {
+    Canada: {
+        x: 8.6,
+        y: 4.4,
+        w: 22.7,
+        h: 22.1,
+        wasIn: false
+    },
+    India: {
+        x: 69.9,
+        y: 31.2,
+        w: 9.4,
+        h: 18.6,
+        wasIn: false
+    },
+    Malaysia: {
+        x: 81.4,
+        y: 50.1,
+        w: 6.5,
+        h: 3.9,
+        wasIn: false
     }
-    navBarOpacity();
+};
+
+if (window.innerWidth < window.innerHeight){
+    alert("for a better experience, use landscape format");
+    document.getElementById("apothegm").style.flexDirection = "reverse-column";
 }
+
+// const mapBg = {};
+// const navEmote = {};
+
+// const navBarOpacity = () => {
+//     let navBar = document.getElementById("navbar");
+//     let opacity = (window.pageYOffset / window.innerHeight);
+//     navBar.style.backgroundColor = "rgba(245,245,245," + (((opacity > 1)?1:opacity).toString()) + ")";
+//     navBar.style.top = window.pageYOffset.toString() + "px";
+//     // console.log("rgba(245,245,245," + (((opacity > 1)?1:opacity).toString()) + ")");
+// }
+//
+// const onScroll = (e) => {
+//
+//     if(document.getElementById("html-balisa").scrollTop < window.innerHeight){
+//
+//     }
+//     navBarOpacity();
+// }
 // window.onscroll = onScroll;
 
 const FLAKE_NUMBER = 10;
@@ -72,11 +104,11 @@ const flakeFall = (picture, speed, start) => {
 
 // snhugow(snowPath);
 
-const setClassOpacity = (className, opacity) => {
-    for (let i in document.getElementsByClassName(className)) {
-        i.style.opacity = opacity + "%";
-    }
-}
+// const setClassOpacity = (className, opacity) => {
+//     for (let i in document.getElementsByClassName(className)) {
+//         i.style.opacity = opacity + "%";
+//     }
+// }
 
 const showClass = (className) => {
     let elements = document.getElementsByClassName(className);
@@ -95,9 +127,9 @@ const hideClass = (className) => {
     }
 }
 
-const leaveMenu = () => {
-    hideClass("nav-bar-link");
-}
+// const leaveMenu = () => {
+//     hideClass("nav-bar-link");
+// }
 
 const restBackground = () => {
     document.body.style.backgroundImage = "url(\"../src/map.png\")";
@@ -131,38 +163,12 @@ const onCountryHover = (country) => {
     document.getElementById("nav-bar").style.backgroundImage = "url(\"../src/menu/" + country + ".png\")";
 }
 
-const countryPositions = {
-  Canada: {
-      x: 8.6,
-      y: 4.4,
-      w: 22.7,
-      h: 22.1,
-      wasIn: false
-  },
-  India: {
-      x: 69.9,
-      y: 31.2,
-      w: 9.4,
-      h: 18.6,
-      wasIn: false
-  },
-  Malaysia: {
-      x: 81.4,
-      y: 50.1,
-      w: 6.5,
-      h: 3.9,
-      wasIn: false
-  }
-};
-
 const isIn = (mouse, country) => {
     return country.x < mouse.x &&
         mouse.x < (country.x + country.w) &&
         country.y < mouse.y &&
         mouse.y < (country.y + country.h);
 };
-
-
 
 const onCountryClick = (country) => {
     window.location.href = "../html/" + country + ".html";
@@ -198,3 +204,19 @@ document.getElementById("home-map").onmousemove = mapEvent;
 document.getElementById("Canada-title").onclick = () => onCountryClick("Canada");
 document.getElementById("India-title").onclick = () => onCountryClick("India");
 document.getElementById("Malaysia-title").onclick = () => onCountryClick("Malaysia");
+
+// const preload = () => {
+//     let temp = [];
+//     let counter = 0;
+//     for(let i in countryPositions){
+//         // console.log("hover");
+//         mapBg[i] = new Image();
+//         mapBg[i].src = "../src/" + i + ".png";
+//
+//         navEmote[i] = new Image();
+//         navEmote[i].src = "../src/menu/" + i + ".png";
+//     }
+//     restBackground();
+// }
+//
+// preload();

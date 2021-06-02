@@ -2,9 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>news, vie & société</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/newsletter.css">
+    <link rel="stylesheet" href="../css/nav-bar.css">
+    <link rel="stylesheet" href="../css/scroll.css">
 </head>
 <body>
+    <div id="nav-bar">
+        <h4 id="Canada-Link"><a class="nav-bar-link" href="./Canada.html">Canada</a></h4>
+        <h4 id="Malaysia-Link"><a class="nav-bar-link" href="./Malaysia.html">Malaisie</a></h4>
+        <h4 id="India-Link"><a class="nav-bar-link" href="./India.html">Inde</a></h4>
+        <h4 id="News-Link"><a class="nav-bar-link" href="./NewsLetter.html">NewsLetter</a></h4>
+        <h4 id="Home-Link"><a class="nav-bar-link" href="./index.html">Home</a></h4>
+    </div>
+    <header>
+        <div class="formbutton" id="formbutton">
+            <form action="/my-handling-form-page" method="post">
+                <div class="input-item">
+                    <label for="fname"> First Name :</label>
+                    <input class="text-input" type="text" required placeholder="Panda" id="fname" name="user_fname">
+                </div>
+                <div class="input-item">
+                    <label for="lname"> Last Name :</label>
+                    <input class="text-input" type="text" required placeholder="Panda" id="lname" name="user_lname">
+                </div>
+                <div class="input-item">
+                    <label for="mail">e-mail:</label>
+                    <input class="email-input" type="email" required placeholder="panda@efrei.net" id="mail" name="user_mail">
+                </div>
+            </form>
+            <div class="buttons">
+                <div class="button">
+                    <button class="headerButton" type="submit" id="add"> Add (10) </button>
+                </div>
+                <div class="button">
+                    <button class="headerButton" type="reset" id="reset"> Remove all </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="mainContent" id="mainContent">
+        <table id="listOfNameWhatALongIdForUHugo">
+            <tr id="legend">
+                <!--just to remember, you can add multiple classes-->
+                <td class="firstname">First Name</td>
+                <td class="lastname">Last Name</td>
+                <td class="email">Email</td>
+            </tr>
+        </table>
+        <div class="navigationButtons" >
+            <button id="btn-back">prev</button>
+            <button id="btn-forward">next</button>
+        </div>
+    </main>
+    <footer class="footer">
 
+    </footer>
+    <script src="../js/newsletter.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>

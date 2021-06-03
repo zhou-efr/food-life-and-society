@@ -38,7 +38,16 @@
     color: dimgrey;
     border-radius: 10px;
     height: 5vh;
-    margin-right: 8px;
+    /*margin-right: 8px;*/
+}
+
+#nav-bar > h4 {
+    position: relative;
+    bottom: 5vh;
+    right: 10vw;
+    width: 10vw;
+    transform-origin: bottom center;
+    /*margin-right: 5vw;*/
 }
 
 .nav-bar-btn:hover {
@@ -54,21 +63,26 @@
 }
 
 #Canada-Link{
-    transform: rotate(45deg) translateX(-4.5vw) translateY(-2vh);
+    transform: rotate(45deg);
+/*translateX(-4.5vw) translateY(-2vh);*/
 }
 
 #Malaysia-Link{
-    transform: rotate(25deg) translateX(-6vw) translateY(-4vh);
+    transform: rotate(25deg);
+/*     translateX(-6vw) translateY(-4vh);*/
 }
 
 #India-Link{
-    transform: rotate(0deg) translateX(-6vw) translateY(-8vh);
+    transform: rotate(0deg);
+/*     translateX(-6vw) translateY(-8vh);*/
 }
 
 #News-Link{
-    transform: rotate(-25deg) translateX(-4vw) translateY(-10vh);
+    transform: rotate(-25deg);
+/*     translateX(-4vw) translateY(-10vh);*/
 }
 
 #Home-Link{
-    transform: rotate(-50deg) translateX(0vw) translateY(-10vh);
+    transform: rotate(-50deg);
+/*     translateX(0vw) translateY(-10vh);*/
 }

@@ -3,7 +3,8 @@ let displayedUser = [];
 
 let index = 0;
 
-const DISPLAYED = 10;
+const DISPLAYED = 9;
+const row_height = 5;
 
 const createDisplayUser = () => {
     displayedUser = [];
@@ -23,27 +24,44 @@ const addUser = (first, last, email) => {
     });
 }
 
+const update_btn_pos = () => {
+    let length = (displayedUser[index])?displayedUser[index].length:0;
+    // console.log(document.getElementById("nextprev").style.top);
+    document.getElementById("nextprev").style.top = -1*(length)*row_height + "vh";
+}
+
 const resetUsers = () => {
     users = [];
+    index = 0;
     renderUsers();
 }
 
 const clearTable = () => {
     let table = document.getElementById("listOfNameWhatALongIdForUHugo"),
-        size = table.children[0].childElementCount;
-    for(let i = 1; i < size; i++){
-        table.children[0].deleteRow(1);
+        size = table.childElementCount;
+    for(let i = table.children.length-1; i > 0; i--){
+        table.children[i].remove();
     }
 }
 
 const createUser = (inputs) => {
-    let new_row = document.createElement("tr");
-    for (let i in inputs) {
-        let td = document.createElement("td");
-        td.textContent = inputs[i];
-        td.classList.add(i);
-        new_row.appendChild(td);
-    }
+    let new_row = document.createElement("div");
+    let sub_row = document.createElement("div");
+    let td = document.createElement("p");
+    td.textContent = inputs["firstname"];
+    td.classList.add("firstname");
+    sub_row.appendChild(td);
+    let td2 = document.createElement("p");
+    td2.textContent = inputs["lastname"];
+    td2.classList.add("lastname");
+    sub_row.appendChild(td2);
+    sub_row.classList.add("name1");
+    new_row.appendChild(sub_row);
+    let td3 = document.createElement("p");
+    td3.textContent = inputs["email"];
+    td3.classList.add("email1");
+    new_row.appendChild(td3);
+    new_row.classList.add("row");
     return new_row;
 }
 
@@ -55,8 +73,9 @@ const renderUsers = () => {
 
     for(let i in displayedUser[index]){
         // children[0] for the tbody
-        table.children[0].appendChild(createUser(displayedUser[index][i]));
+        table.appendChild(createUser(displayedUser[index][i]));
     }
+    update_btn_pos();
 }
 
 const handleAddUsers = () => {

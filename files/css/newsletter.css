@@ -27,6 +27,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    overflow-x: hidden;
 }
 
 p {
@@ -111,9 +113,9 @@ input:invalid {
     color: dimgrey;
     background-color: #E5E5E5;
 
-    padding-top: 15vh;
+    padding-top: 10vh;
 
-    height: 45vh;
+    height: 60vh;
     width: 100vw;
     position: absolute;
     left: 0;
@@ -129,11 +131,6 @@ td {
     /*border-top : 2px solid whitesmoke;*/
 }
 
-#listOfNameWhatALongIdForUHugo {
-    width: 75%;
-    border-collapse: collapse;
-}
-
 /*.fatigue*/
 /*{*/
 /*    background-color: darkgrey;*/
@@ -146,6 +143,9 @@ td {
     justify-content: space-between;
     width: 50vw;
     align-self: center;
+
+    position: relative;
+    top: 0;
 }
 
 #btn-back{
@@ -170,4 +170,94 @@ td {
 
 #nav-bar{
     top: 75vh !important;
+}
+
+#listOfNameWhatALongIdForUHugo {
+    display: flex;
+    flex-flow: column;
+
+    align-items: center;
+    align-self: center;
+
+    width: 75%;
+}
+
+#listOfNameWhatALongIdForUHugo > div {
+    display: flex;
+    flex-direction: row;
+
+    width: 100vw;
+
+    justify-content: space-between;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    border-radius: 25px;
+    height: 50vh;
+
+    margin-right: 20vw;
+    padding-left: 25vw;
+    padding-right: 5vw;
+    padding-bottom: 16px;
+
+    background-color: #F5DA77;
+}
+
+.firstname {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.lastname{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.email{
+    height: 50vh;
+    background-color: whitesmoke;
+    border-radius: 25px;
+
+    margin-left: 0;
+    padding-right: 45vw;
+    padding-left: 5vw;
+    margin-top: 0;
+    padding-top: 16px;
+}
+
+.email1{
+    justify-self: flex-end;
+    /*margin-left: 0;*/
+    /*padding-left: 18vw;*/
+    /*margin-top: 0;*/
+    /*padding-top: 16px;*/
+
+    margin-right: 2vw;
+}
+
+.name1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    /*margin-right: 10vw;*/
+    /*padding-right: 5vw;*/
+    /*padding-top: 16px;*/
+    width: 10vw;
+}
+
+.row {
+    position: relative;
+    top: -50vh;
+
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*justify-content: space-between;*/
+
+    height: 5vh;
+    width: 100vw;
 }

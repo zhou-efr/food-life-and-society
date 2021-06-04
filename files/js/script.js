@@ -120,7 +120,7 @@ const isIn = (mouse, country) => {
 };
 
 const onCountryClick = (country) => {
-    window.location.href = "./files/html/" + country + ".html";
+    window.location.href = "./" + country + ".html";
 };
 
 const mapEvent = (e) => {

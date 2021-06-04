@@ -3,7 +3,7 @@ const DELAY = {min:500, max:1000};
 const SPEED = {min:3, max:10};
 const SIZE = 30;
 let count = 0;
-// const snowPath = "../src/snow.svg";
+// const snowPath = "./files/src/snow.svg";
 
 const randInt = (min, max) => {
     return Math.max(min, Math.floor(Math.random()*max));
@@ -52,7 +52,7 @@ const flakeFall = (picture, speed, start) => {
     fall(picture, start.y, speed, start.x, 0, random(10, 40));
 }
 
-snhugow("../src/leaf.svg");
+snhugow("./files/src/leaf.svg");
 
 // for (let i in document.getElementById("contents").children){
 //     document.getElementById("contents").children[i].style.flexDirection = randInt(0,1)?"row":"reverse-row";

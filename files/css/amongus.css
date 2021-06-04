@@ -62,6 +62,8 @@ h5{
     padding-right : 100vw;
     border-radius : 30px;
 
+    animation: slideintitle 3s;
+
 }
 
 #tribu{
@@ -76,16 +78,17 @@ h5{
     position : absolute ;
     top :10vh;
     margin-left:12vw;
+    animation : slideinlogo 3s;
 }
 
 
 #maincontent{
     position: absolute ;
-    top : -3vh;
+    top : -6vh;
     background-color: white;
     color :black;
     width : 45vw;
-    left : 15vw;
+    left : 19vw;
 
 
     font-size:20px;
@@ -94,7 +97,7 @@ h5{
     padding-right : 8vw;
     padding-top: 30vh;
     padding-bottom : 15vh;
-
+    animation : fade-in 8s ease-in-out;
 }
 
 
@@ -151,5 +154,34 @@ h5{
 
     #maincontent{
         padding-top:50vh;
+    }
+}
+
+@keyframes fade-in {
+    0%,37.5% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideinlogo {
+    from {
+        margin-left: 100vw;
+    }
+
+    to {
+        margin-left: 12vw;
+    }
+}
+
+@keyframes slideintitle {
+    from {
+        margin-left: 100vw;
+    }
+
+    to {
+        margin-left: 10vw;
     }
 }

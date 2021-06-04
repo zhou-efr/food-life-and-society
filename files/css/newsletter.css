@@ -60,15 +60,17 @@ label {
     text-transform: uppercase;
     border: none;
     padding: 5px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
 }
 
-button:hover {
-    background-color: darkgrey;
-}
 
-button:active {
-    background-color: grey;
-}
+
 
 .formbutton {
     margin-top: 15px;
@@ -162,6 +164,13 @@ td {
     position: absolute;
     top : 43vh;
     left : 25vw;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
     /*
     background-repeat: no-repeat;
     padding: 5px;
@@ -175,6 +184,13 @@ td {
     position: absolute;
     top : 43vh;
     left : 50vw;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
     /*
     background-repeat : no-repeat;
     font-size : 30px;

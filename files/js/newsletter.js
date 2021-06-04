@@ -31,6 +31,7 @@ const update_btn_pos = () => {
 }
 
 const resetUsers = () => {
+    console.log("panda");
     users = [];
     index = 0;
     renderUsers();
@@ -84,6 +85,7 @@ const handleAddUsers = () => {
         lastname: document.getElementById("lname").value,
         email: document.getElementById("mail").value
     };
+    console.log("ours");
     let filled = true;
     for(let i in inputs){
         if(inputs[i] === ""){

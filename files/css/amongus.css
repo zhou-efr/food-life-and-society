@@ -1,0 +1,187 @@
+body{
+    overflow-y : scroll;
+    overflow-x : hidden;
+    min-height: 500px ;
+    width : 100vw;
+    height : 100vh;
+
+    background-color : #B6B39F;
+}
+
+cercle{
+    display :flex;
+    background : #FFFFFF;
+    position : absolute ;
+    top : -60vh;
+    right : -45vh;
+    width : 100vh;
+    height : 90vh;
+    border-radius : 500px;
+    z-index : 700;
+}
+
+rightTitle {
+    display:flex;
+    z-index : 800;
+    position: absolute;
+    left: 76vw;
+    top: 8vh;
+
+    font-family: Paprika;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 75px;
+    line-height: 85px;
+    text-align: center;
+
+    color: #000000;
+
+    backdrop-filter: blur(4px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    transform: rotate(25deg);
+}
+
+h5{
+    position : absolute;
+    z-index : 100;
+    top : -9vh;
+    margin-left: 10vw;
+    width : 70vw;
+    text-align: center;
+    display : flex;
+
+    color : black;
+    background-color : #F5DA77;
+    font-size: 75px;
+    font-family : Paprika;
+
+    padding-bottom : 3vh;
+    padding-top : 3vh;
+    padding-left : 10vw;
+    padding-right : 100vw;
+    border-radius : 30px;
+
+    animation: slideintitle 3s;
+
+}
+
+#tribu{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    transform: rotate(5.96deg);
+}
+
+#logo{
+    z-index : 200;
+    position : absolute ;
+    top :10vh;
+    margin-left:12vw;
+    animation : slideinlogo 3s;
+}
+
+
+#maincontent{
+    position: absolute ;
+    top : -6vh;
+    background-color: white;
+    color :black;
+    width : 45vw;
+    left : 19vw;
+
+
+    font-size:20px;
+    text-align : center;
+
+    padding-right : 8vw;
+    padding-top: 30vh;
+    padding-bottom : 15vh;
+    animation : fade-in 8s ease-in-out;
+}
+
+
+@media (max-width: 1500px)
+{
+    cercle{
+        display : none;
+    }
+
+    rightTitle{
+        display : none;
+    }
+
+    body{
+        overflow-x: scroll;
+    }
+
+    h5{
+        padding-right:10vw;
+
+        margin-left : auto;
+        margin-top: auto;
+    }
+
+    #maincontent{
+        width:1000px;
+    }
+}
+
+@media (max-height:700px){
+    cercle{
+        display : none;
+    }
+
+    rightTitle{
+        display : none;
+    }
+
+    body{
+        overflow-x: scroll;
+    }
+
+    h5{
+        padding-right:10vw;
+    }
+
+
+}
+
+@media (max-height:600px){
+    #logo{
+        display:none;
+    }
+
+    #maincontent{
+        padding-top:50vh;
+    }
+}
+
+@keyframes fade-in {
+    0%,37.5% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideinlogo {
+    from {
+        margin-left: 100vw;
+    }
+
+    to {
+        margin-left: 12vw;
+    }
+}
+
+@keyframes slideintitle {
+    from {
+        margin-left: 100vw;
+    }
+
+    to {
+        margin-left: 10vw;
+    }
+}

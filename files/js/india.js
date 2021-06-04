@@ -3,7 +3,7 @@ const DELAY = {min:500, max:1000};
 const SPEED = {min:10, max:30};
 const SIZE = 40;
 let count = 0;
-const snowPath = "./files/src/snow.svg";
+const snowPath = "../src/snow.svg";
 
 const randInt = (min, max) => {
     return Math.max(min, Math.floor(Math.random()*max));
@@ -52,4 +52,4 @@ const flakeFall = (picture, speed, start) => {
     fall(picture, start.y, speed, start.x, 0, random(10, 40));
 }
 
-document.getElementById("footerLogo").onclick = () => snhugow("./files/src/elephant.png");
+document.getElementById("footerLogo").onclick = () => snhugow("../src/elephant.png");

@@ -81,19 +81,19 @@ const hideClass = (className) => {
 // }
 
 const restBackground = () => {
-    document.body.style.backgroundImage = "url(\"./files/src/map.png\")";
-    document.getElementById("nav-bar").style.backgroundImage = "url(\"./files/src/menu/neutral.png\")";
+    document.body.style.backgroundImage = "url(\"../src/map.png\")";
+    document.getElementById("nav-bar").style.backgroundImage = "url(\"../src/menu/neutral.png\")";
     // hideClass("nav-bar-link");
 }
 
 const onMenuHover = () => {
-    document.getElementById("nav-bar").style.backgroundImage = "url(\"./files/src/menu/happy.png\")";
+    document.getElementById("nav-bar").style.backgroundImage = "url(\"../src/menu/happy.png\")";
 }
 
 let navBarShow = false;
 const handleNavBarClick = () => {
     if (navBarShow){
-        document.getElementById("nav-bar").style.backgroundImage = "url(\"./files/src/menu/neutral.png\")";
+        document.getElementById("nav-bar").style.backgroundImage = "url(\"../src/menu/neutral.png\")";
         hideClass("nav-bar-link");
     }else{
         onMenuHover();
@@ -104,12 +104,12 @@ const handleNavBarClick = () => {
 }
 document.getElementById("nav-bar").onclick = handleNavBarClick;
 document.getElementById("nav-bar").onmouseover = onMenuHover;
-document.getElementById("nav-bar").onmouseleave = () => {document.getElementById("nav-bar").style.backgroundImage = "url(\"./files/src/menu/neutral.png\")";};
+document.getElementById("nav-bar").onmouseleave = () => {document.getElementById("nav-bar").style.backgroundImage = "url(\"../src/menu/neutral.png\")";};
 
 const onCountryHover = (country) => {
     // console.log("hover");
-    document.body.style.backgroundImage = "url(\"./files/src/" + country + ".png\")";
-    document.getElementById("nav-bar").style.backgroundImage = "url(\"./files/src/menu/" + country + ".png\")";
+    document.body.style.backgroundImage = "url(\"../src/" + country + ".png\")";
+    document.getElementById("nav-bar").style.backgroundImage = "url(\"../src/menu/" + country + ".png\")";
 }
 
 const isIn = (mouse, country) => {
@@ -120,7 +120,7 @@ const isIn = (mouse, country) => {
 };
 
 const onCountryClick = (country) => {
-    window.location.href = "./files/html/" + country + ".html";
+    window.location.href = "../html/" + country + ".html";
 };
 
 const mapEvent = (e) => {
@@ -160,10 +160,10 @@ document.getElementById("Malaysia-title").onclick = () => onCountryClick("Malays
 //     for(let i in countryPositions){
 //         // console.log("hover");
 //         mapBg[i] = new Image();
-//         mapBg[i].src = "./files/src/" + i + ".png";
+//         mapBg[i].src = "../src/" + i + ".png";
 //
 //         navEmote[i] = new Image();
-//         navEmote[i].src = "./files/src/menu/" + i + ".png";
+//         navEmote[i].src = "../src/menu/" + i + ".png";
 //     }
 //     restBackground();
 // }

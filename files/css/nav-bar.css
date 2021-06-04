@@ -56,33 +56,34 @@
 
 .nav-bar-link{
     text-align: right;
-    color: #EFC11C;
+    /*color: #EFC11C;*/
+    color: black;
 
     text-decoration: none;
     visibility: hidden;
 }
 
-#Canada-Link{
-    transform: rotate(45deg);
-/*translateX(-4.5vw) translateY(-2vh);*/
-}
+/*#Canada-Link{*/
+/*    transform: rotate(45deg);*/
+/*!*translateX(-4.5vw) translateY(-2vh);*!*/
+/*}*/
 
-#Malaysia-Link{
-    transform: rotate(25deg);
-/*     translateX(-6vw) translateY(-4vh);*/
-}
+/*#Malaysia-Link{*/
+/*    transform: rotate(25deg);*/
+/*!*     translateX(-6vw) translateY(-4vh);*!*/
+/*}*/
 
-#India-Link{
-    transform: rotate(0deg);
-/*     translateX(-6vw) translateY(-8vh);*/
-}
+/*#India-Link{*/
+/*    transform: rotate(0deg);*/
+/*!*     translateX(-6vw) translateY(-8vh);*!*/
+/*}*/
 
-#News-Link{
-    transform: rotate(-25deg);
-/*     translateX(-4vw) translateY(-10vh);*/
-}
+/*#News-Link{*/
+/*    transform: rotate(-25deg);*/
+/*!*     translateX(-4vw) translateY(-10vh);*!*/
+/*}*/
 
-#Home-Link{
-    transform: rotate(-50deg);
-/*     translateX(0vw) translateY(-10vh);*/
-}
+/*#Home-Link{*/
+/*    transform: rotate(-50deg);*/
+/*!*     translateX(0vw) translateY(-10vh);*!*/
+/*}*/

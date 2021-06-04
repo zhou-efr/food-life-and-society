@@ -8,7 +8,7 @@ body{
     background-color : #B6B39F;
 }
 
-cercle{
+#cercle{
     display :flex;
     background : #FFFFFF;
     position : absolute ;
@@ -20,7 +20,7 @@ cercle{
     z-index : 700;
 }
 
-rightTitle {
+#rightTitle {
     display:flex;
     z-index : 800;
     position: absolute;
@@ -42,10 +42,15 @@ rightTitle {
     transform: rotate(25deg);
 }
 
-h5{
+h5 {
+    margin: 0;
+    padding-right: 30vw;
+}
+
+#head{
     position : absolute;
     z-index : 100;
-    top : -15vh;
+    top : 3vh;
     margin-left: 10vw;
     width : 70vw;
     text-align: center;
@@ -55,11 +60,8 @@ h5{
     background-color : #F5DA77;
     font-size: 75px;
     font-family : Paprika;
-
-    padding-bottom : 3vh;
-    padding-top : 3vh;
     padding-left : 10vw;
-    padding-right : 100vw;
+    padding-right : 150vw;
     border-radius : 30px;
 
     animation: slideintitle 3s;
@@ -74,12 +76,14 @@ h5{
 }
 
 #logo{
-    z-index : 200;
-    position : absolute ;
-    top :5vh;
-    margin-left:12vw;
-    margin-top: 2vh;
-    animation : slideinlogo 3s;
+    object-fit: contain;
+    width: 5vw;
+    /*z-index : 200;*/
+    /*position : absolute ;*/
+    /*top :5vh;*/
+    margin-left:3vw;
+    /*margin-top: 2vh;*/
+    /*animation : slideinlogo 3s;*/
 }
 
 #maincontent > span {
@@ -109,27 +113,27 @@ h5{
     top: 75vh !important;
 }
 
-@media (max-width: 1023px)
-{
-    cercle{
-        display : none;
-    }
+/*@media (max-width: 1023px)*/
+/*{*/
+/*    cercle{*/
+/*        display : none;*/
+/*    }*/
 
-    rightTitle{
-        display : none;
-    }
+/*    rightTitle{*/
+/*        display : none;*/
+/*    }*/
 
-    body{
-        overflow-x: hidden;
-    }
+/*    body{*/
+/*        overflow-x: hidden;*/
+/*    }*/
 
-    h5{
-        padding-right:10vw;
+/*    h5{*/
+/*        padding-right:10vw;*/
 
-        margin-left : auto;
-        margin-top: auto;
-    }
-}
+/*        margin-left : auto;*/
+/*        margin-top: auto;*/
+/*    }*/
+/*}*/
 
 /*@media (max-height:700px){*/
 /*    cercle{*/

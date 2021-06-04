@@ -56,6 +56,7 @@ label {
     background-repeat:no-repeat;
     border: none;
     cursor:pointer;
+    padding-top: 10px;
 }
 
 button:hover {
@@ -70,7 +71,7 @@ button:active {
     flex-flow: wrap;}
 
 .formbutton {
-    margin-top: 10vh;
+    /*margin-top: 10vh;*/
     box-sizing: border-box;
     border-radius: 25px;
     padding : 10px;
@@ -152,6 +153,7 @@ td {
 
     position: relative;
     top: 0;
+    margin-bottom: 10px;
 }
 
 .navigationButtons > div{
@@ -161,43 +163,45 @@ td {
     padding: 10px;
 }
 
-.navigationButtons > div > button {
-    /*padding-bottom: 10px;*/
-}
+/*.navigationButtons > div > button {*/
+/*    padding-bottom: 10px;*/
+/*}*/
 
 #flex-prev {
+    padding: 2vw;
     background-image: url("../src/btn/prev.png");
     background-size: contain;
     background-color: Transparent;
     background-repeat:no-repeat;
     border: none;
-    cursor:pointer;
 }
 
 #btn-back{
     /*padding: 10px;*/
     background-color: rgba(1, 1, 1, 0);
     border: none;
+    cursor:pointer;
 }
 
 #flex-next{
-
+    padding: 2vw;
     background-image: url("../src/btn/next.png");
     background-size: contain;
     background-color: Transparent;
     background-repeat:no-repeat;
     border: none;
-    cursor:pointer;
+
 }
 
 #btn-forward{
     /*padding: 10px;*/
     background-color: rgba(1, 1, 1, 0);
     border: none;
+    cursor:pointer;
 }
 
 #nav-bar{
-    top: 75vh !important;
+    top: 5vh !important;
 }
 
 #listOfNameWhatALongIdForUHugo {
@@ -303,4 +307,6 @@ td {
     left: 75vw;
 }
 
-@media ()
+.button {
+
+}

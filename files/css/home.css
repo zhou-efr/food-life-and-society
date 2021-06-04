@@ -114,6 +114,15 @@ body {
     height: 4vh;
 }
 
-#footer {
-    background-color: grey;
+.footer{
+    position: absolute;
+    background-color: lightgrey;
+    top: 280vh;
+    z-index: 1000;
+    padding-top: 5vh;
+    padding-bottom: 20vh;
+}
+
+scroll-container{
+    overflow-x: hidden;
 }

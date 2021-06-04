@@ -24,6 +24,7 @@ const addUser = (first, last, email) => {
 }
 
 const resetUsers = () => {
+    console.log("panda");
     users = [];
     renderUsers();
 }
@@ -65,6 +66,7 @@ const handleAddUsers = () => {
         lastname: document.getElementById("lname").value,
         email: document.getElementById("mail").value
     };
+    console.log("ours");
     let filled = true;
     for(let i in inputs){
         if(inputs[i] === ""){

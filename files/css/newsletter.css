@@ -6,33 +6,34 @@ header {
     margin-bottom: 10px;
     z-index: 863;
     position: absolute;
-    width: 916px;
-    height: 126px;
-    top: 11vh;
+    width: 61vw;
+    height: 13vh;
+    top: 20vh;
 
     background: #F5DA77;
     border-radius: 25px;
 }
 
 form {
-    margin-top: 10px;
     display : flex;
     flex-flow: row;
     flex-wrap: wrap;
     align-content: stretch;
     justify-content : center;
+    margin-bottom : 1vh;
 }
 
 body {
     width: 75%;
-    height :100%;
+    max-height:100vh;
     margin-left: 12.5%;
-    overflow: scroll;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: white;
 }
+
 
 p {
     text-indent: 20px;
@@ -117,19 +118,23 @@ input:invalid {
     padding-bottom : 50px;
 
     height: 70vh;
-    width: 100vw;
+    width: 105vw;
     position: absolute;
     left: 0;
-    top: 25vh;
+    top: 30vh;
+
+    overflow: hidden;
 }
 
 td {
-    z-index: 100;
+    position : relative;
+    top : -65vh;
+    z-index: auto;
+    color : black;
     margin: 10px;
-    justify-content: center;
-    width : 30% ;
-    text-align : center;
+    width : 70% ;
     padding : 5px;
+    border : 1px solid red;
     /*border-top : 2px solid whitesmoke;*/
 }
 
@@ -150,22 +155,34 @@ td {
     justify-content: space-between;
     width: 50vw;
     align-self: center;
+    top : 90vh;
 }
 
 #btn-back{
+    position: absolute;
+    top : 43vh;
+    left : 25vw;
+    /*
     background-repeat: no-repeat;
     padding: 5px;
     font-size : 30px;
 
     border: none;
+     */
 }
 
 #btn-forward{
+    position: absolute;
+    top : 43vh;
+    left : 50vw;
+    /*
     background-repeat : no-repeat;
     font-size : 30px;
     padding: 5px;
 
     border: none;
+
+     */
 }
 
 #nav-bar{
@@ -174,25 +191,29 @@ td {
 
 #title{
     position : absolute;
-    top : 5px;
+    font-family: Paprika;
+    top : 7vh;
     font-style: normal;
     font-weight: normal;
     font-size: 50px;
     line-height: 71px;
     text-align: center;
+    z-index : auto;
 
 
 }
 
 #leftPart{
-    position: absolute;
+    position: relative;
     width: 43vw;
-    height: 60vh;
+    height: 40vh;
     left: -3vh;
-    top: 10vh;
-    z-index : 1;
+    top: -5vh;
+    z-index : 0;
 
-    background-color: #E4BE36;
+    /* background-color: #E4BE36;
+     */
+    background: rgba(239, 193, 28, 0.8);
     box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
 
@@ -202,10 +223,10 @@ td {
 #rightPart{
     position: absolute;
     width: 53vw;
-    height: 60vh;
+    height: 40vh;
     right: -3vh;
     top: 10vh;
-    z-index : 1;
+    z-index : auto;
 
     background: #FFFFFF;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -216,6 +237,7 @@ td {
 
 #bothParts{
     flex-flow : row;
+    z-index: 0;
 }
 #add{
     /* background-image : url("../src/btn/register.png");
@@ -248,3 +270,28 @@ td {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.email {
+    border : 1px solid red;
+}
+
+#gribou1{
+    position: absolute;
+    left: 4vw;
+    top: 1vh;
+}
+
+#gribou2{
+    position: absolute;
+    left: 85vw;
+    top: 1.5vh;
+    transform: rotate(40deg);
+}
+
+#sourire{
+    position: absolute;
+    left : 49vw;
+    z-index:auto;
+    opacity : 0.5;
+
+
+}

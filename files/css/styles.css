@@ -21,7 +21,7 @@ main{
     flex-flow: wrap;
     width: 100vw;
     margin-bottom: 3vh;
-    height: 60vh;
+    /*height: 60vh;*/
     align-items: center;
 }
 
@@ -54,10 +54,13 @@ main{
 
 @media screen and (max-width: 1023px) {
     .content > img {
-        width: 100vw;
+        width: 90vw;
         object-fit: contain;
     }
     .content > p{
         width: 100vw;
+    }
+    #center {
+        flex-direction: row;
     }
 }

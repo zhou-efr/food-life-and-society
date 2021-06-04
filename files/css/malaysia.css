@@ -1,0 +1,9 @@
+.flexMainTitle{
+    background-image: url("../src/leaf.svg");
+    background-size: contain;
+}
+
+p {
+    background-image: url("../src/leaf.svg");
+    background-size: contain;
+}

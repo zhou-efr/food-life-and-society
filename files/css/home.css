@@ -59,6 +59,12 @@ body {
     height: 100%;
 }
 
+@media screen and (max-width: 1023px) {
+    #bibimbap{
+        display: none;
+    }
+}
+
 #description-title {
     align-self: center;
 }

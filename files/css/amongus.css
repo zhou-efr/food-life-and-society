@@ -9,6 +9,7 @@ body{
 }
 
 cercle{
+    display :flex;
     background : #FFFFFF;
     position : absolute ;
     top : -60vh;
@@ -20,6 +21,7 @@ cercle{
 }
 
 rightTitle {
+    display:flex;
     z-index : 800;
     position: absolute;
     left: 76vw;
@@ -96,3 +98,58 @@ h5{
 }
 
 
+@media (max-width: 1500px)
+{
+    cercle{
+        display : none;
+    }
+
+    rightTitle{
+        display : none;
+    }
+
+    body{
+        overflow-x: scroll;
+    }
+
+    h5{
+        padding-right:10vw;
+
+        margin-left : auto;
+        margin-top: auto;
+    }
+
+    #maincontent{
+        width:1000px;
+    }
+}
+
+@media (max-height:700px){
+    cercle{
+        display : none;
+    }
+
+    rightTitle{
+        display : none;
+    }
+
+    body{
+        overflow-x: scroll;
+    }
+
+    h5{
+        padding-right:10vw;
+    }
+
+
+}
+
+@media (max-height:600px){
+    #logo{
+        display:none;
+    }
+
+    #maincontent{
+        padding-top:50vh;
+    }
+}

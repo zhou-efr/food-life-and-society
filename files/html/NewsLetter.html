@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/newsletter.css">
     <link rel="stylesheet" href="../css/nav-bar.css">
     <link rel="stylesheet" href="../css/scroll.css">
+    <link rel="stylesheet" href="../css/footer.css">
 </head>
 <body>
     <div id="nav-bar">
@@ -18,7 +19,7 @@
     </div>
     <header>
         <div class="formbutton" id="formbutton">
-            <form action="/my-handling-form-page" method="post">
+            <form id="forms" action="/my-handling-form-page" method="post">
                 <div class="input-item">
                     <label for="fname"> First Name :</label>
                     <input class="text-input" type="text" required placeholder="Panda" id="fname" name="user_fname">
@@ -54,12 +55,16 @@
             </div>
         </div>
         <div class="navigationButtons" id="nextprev">
-            <button id="btn-back">prev</button>
-            <button id="btn-forward">next</button>
+            <div id="flex-prev"><button id="btn-back">prev</button></div>
+            <div id="flex-next"><button id="btn-forward">next</button></div>
         </div>
     </main>
     <footer class="footer">
-
+        <img id="footerLogo" src="../src/logo_tdz_2_0.png" alt="best-logo">
+        <div id="footerFlex">
+            <p>Par Hugo Chamillard, Killian Zhou et Robin Dheilly</p>
+            <h3 id="TDZ">La Tribu des Zhous</h3>
+        </div>
     </footer>
     <script src="../js/newsletter.js"></script>
     <script src="../js/script.js"></script>

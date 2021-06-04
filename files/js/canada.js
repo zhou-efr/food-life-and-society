@@ -3,7 +3,7 @@ const DELAY = {min:500, max:1000};
 const SPEED = {min:3, max:10};
 const SIZE = 15;
 let count = 0;
-const snowPath = "./files/src/snow.svg";
+const snowPath = "../src/snow.svg";
 
 const randInt = (min, max) => {
     return Math.max(min, Math.floor(Math.random()*max));

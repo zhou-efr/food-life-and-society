@@ -13,3 +13,14 @@
 
     z-index: 863;
 }
+
+#bg{
+    background-image: url("../src/CanadaHeader.png");
+    background-repeat: no-repeat;
+    background-size: 100vw 20vh;
+    width: 100vw;
+    height: 20vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

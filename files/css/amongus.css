@@ -113,27 +113,22 @@ h5 {
     top: 75vh !important;
 }
 
-/*@media (max-width: 1023px)*/
-/*{*/
-/*    cercle{*/
-/*        display : none;*/
-/*    }*/
+@media screen and (max-width: 1023px)
+{
+    #cercle{
+        display : none;
+    }
 
-/*    rightTitle{*/
-/*        display : none;*/
-/*    }*/
+    #rightTitle{
+        display : none;
+    }
+}
 
-/*    body{*/
-/*        overflow-x: hidden;*/
-/*    }*/
-
-/*    h5{*/
-/*        padding-right:10vw;*/
-
-/*        margin-left : auto;*/
-/*        margin-top: auto;*/
-/*    }*/
-/*}*/
+@media screen and (max-width: 800px) {
+    #maincontent {
+        margin-top: 20vh;
+    }
+}
 
 /*@media (max-height:700px){*/
 /*    cercle{*/

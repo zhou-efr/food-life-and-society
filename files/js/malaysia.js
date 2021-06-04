@@ -53,3 +53,7 @@ const flakeFall = (picture, speed, start) => {
 }
 
 snhugow("../src/leaf.svg");
+
+// for (let i in document.getElementById("contents").children){
+//     document.getElementById("contents").children[i].style.flexDirection = randInt(0,1)?"row":"reverse-row";
+// }

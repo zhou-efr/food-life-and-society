@@ -168,7 +168,7 @@ td {
 /*}*/
 
 #flex-prev {
-    padding: 2vw;
+    /*padding: 2vw;*/
     background-image: url("../src/btn/prev.png");
     background-size: contain;
     background-color: Transparent;
@@ -184,7 +184,7 @@ td {
 }
 
 #flex-next{
-    padding: 2vw;
+    /*padding: 2vw;*/
     background-image: url("../src/btn/next.png");
     background-size: contain;
     background-color: Transparent;

@@ -1,17 +1,17 @@
 #center {
-    background-image: url("../src/indiaBack.png");
+    background-image: url("./files/src/indiaBack.png");
     background-size: 100% 100%;
     background-repeat: repeat-x;
 }
 
 .flexMainTitle > h1{
-    background-image: url("../src/titlebgIndia.png");
+    background-image: url("./files/src/titlebgIndia.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #elephant {
-    background-image: url("../src/noun_Elephant_2386145.svg");
+    background-image: url("./files/src/noun_Elephant_2386145.svg");
     /*Created by Andre from the Noun Project*/
     background-size: auto 10vh;
     background-repeat: repeat-x;

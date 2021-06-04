@@ -3,7 +3,7 @@
 }
 
 #leaf{
-    background-image: url("./files/src/canadaLead.svg");
+    background-image: url("../src/canadaLead.svg");
     background-size: contain;
     position: relative;
     left: -3vw;
@@ -15,7 +15,7 @@
 }
 
 #bg{
-    background-image: url("./files/src/CanadaHeader.png");
+    background-image: url("../src/CanadaHeader.png");
     background-repeat: no-repeat;
     background-size: 100vw 20vh;
     width: 100vw;

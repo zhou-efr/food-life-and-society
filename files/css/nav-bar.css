@@ -10,7 +10,7 @@
     /*justify-content: right;*/
     /*align-items: center;*/
 
-    background-image: url("./files/src/menu/neutral.png");
+    background-image: url("../src/menu/neutral.png");
     background-size: contain;
     background-repeat: no-repeat;
 
@@ -29,7 +29,7 @@
 }
 
 #nav-bar:hover{
-    background-image: url("./files/src/menu/happy.png");
+    background-image: url("../src/menu/happy.png");
 }
 
 .nav-bar-btn {

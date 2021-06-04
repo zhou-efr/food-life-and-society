@@ -52,20 +52,16 @@ label {
 }
 
 .headerButton {
-    margin: 10px;
-    text-transform: uppercase;
+    background-color: Transparent;
+    background-repeat:no-repeat;
     border: none;
-    background-color: lightgrey;
-    box-shadow: 1px 1px 2px dimgrey;
-    padding: 5px;
+    cursor:pointer;
 }
 
 button:hover {
-    background-color: darkgrey;
 }
 
 button:active {
-    background-color: grey;
 }
 
 #forms{
@@ -74,15 +70,16 @@ button:active {
     flex-flow: wrap;}
 
 .formbutton {
-    margin-top: 15px;
+    margin-top: 10vh;
     box-sizing: border-box;
     border-radius: 25px;
     padding : 10px;
     background-color: #F5DA77;
     display: flex;
+    justify-content: center;
     flex-direction: row;
     flex-flow: wrap;
-    width: 75vw;
+    width: 50vw;
 }
 
 input {
@@ -120,7 +117,7 @@ input:invalid {
     justify-content: space-between;
     font-family: Open Sans;
     color: dimgrey;
-    background-color: #E5E5E5;
+    background-color: #B6B39F;
 
     padding-top: 10vh;
 
@@ -171,8 +168,10 @@ td {
 #flex-prev {
     background-image: url("../src/btn/prev.png");
     background-size: contain;
-    background-color: #E5E5E5;
-    background-repeat: no-repeat;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
 }
 
 #btn-back{
@@ -184,9 +183,11 @@ td {
 #flex-next{
 
     background-image: url("../src/btn/next.png");
-    background-color: #E5E5E5;
     background-size: contain;
-    background-repeat: no-repeat;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
 }
 
 #btn-forward{
@@ -223,15 +224,16 @@ td {
     flex-direction: row;
     justify-content: flex-start;
 
-    border-radius: 25px;
     height: 50vh;
 
-    margin-right: 20vw;
+    margin-right: 10vw;
     padding-left: 25vw;
     padding-right: 5vw;
     padding-bottom: 16px;
 
-    background-color: #F5DA77;
+    background: rgba(239, 193, 28, 0.8);
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
 }
 
 .firstname {
@@ -246,8 +248,9 @@ td {
 
 .email{
     height: 50vh;
-    background-color: whitesmoke;
-    border-radius: 25px;
+    background: #FFFFFF;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
 
     margin-left: 0;
     padding-right: 45vw;
@@ -299,3 +302,5 @@ td {
     position: absolute;
     left: 75vw;
 }
+
+@media ()

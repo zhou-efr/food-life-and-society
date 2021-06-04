@@ -290,9 +290,12 @@ td {
 }
 
 .footer{
-
-
     position: absolute;
     left: 0;
     top: 90vh;
+}
+
+#nav-bar {
+    position: absolute;
+    left: 75vw;
 }

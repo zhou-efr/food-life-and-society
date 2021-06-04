@@ -4,9 +4,15 @@ html {
     overflow-x: hidden;
 }
 
+main{
+
+    width: 100vw;
+}
+
 .contents{
     display: flex;
     flex-direction: column;
+    width: 100vw;
     overflow-x: hidden;
 }
 
@@ -15,11 +21,14 @@ html {
     flex-flow: wrap;
     width: 100vw;
     margin-bottom: 3vh;
+    height: 60vh;
+    align-items: center;
 }
 
 .content > img{
     width: 20vw;
     object-fit: contain;
+    margin: 2vw;
 }
 
 #center {

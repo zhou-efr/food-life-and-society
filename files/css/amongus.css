@@ -24,13 +24,13 @@ rightTitle {
     display:flex;
     z-index : 800;
     position: absolute;
-    left: 76vw;
+    left: 79vw;
     top: 8vh;
 
     font-family: Paprika;
     font-style: normal;
     font-weight: normal;
-    font-size: 75px;
+    font-size: 50px;
     line-height: 85px;
     text-align: center;
 
@@ -45,7 +45,7 @@ rightTitle {
 h5{
     position : absolute;
     z-index : 100;
-    top : -9vh;
+    top : -15vh;
     margin-left: 10vw;
     width : 70vw;
     text-align: center;
@@ -76,11 +76,15 @@ h5{
 #logo{
     z-index : 200;
     position : absolute ;
-    top :10vh;
+    top :5vh;
     margin-left:12vw;
+    margin-top: 2vh;
     animation : slideinlogo 3s;
 }
 
+#maincontent > span {
+    padding-bottom: 2vh;
+}
 
 #maincontent{
     position: absolute ;
@@ -92,16 +96,20 @@ h5{
 
 
     font-size:20px;
-    text-align : center;
+    text-align : justify;
 
-    padding-right : 8vw;
+    padding-left: 5vw;
+    padding-right : 5vw;
     padding-top: 30vh;
     padding-bottom : 15vh;
     animation : fade-in 8s ease-in-out;
 }
 
+#nav-bar{
+    top: 75vh !important;
+}
 
-@media (max-width: 1500px)
+@media (max-width: 1023px)
 {
     cercle{
         display : none;
@@ -112,7 +120,7 @@ h5{
     }
 
     body{
-        overflow-x: scroll;
+        overflow-x: hidden;
     }
 
     h5{
@@ -121,41 +129,37 @@ h5{
         margin-left : auto;
         margin-top: auto;
     }
-
-    #maincontent{
-        width:1000px;
-    }
 }
 
-@media (max-height:700px){
-    cercle{
-        display : none;
-    }
+/*@media (max-height:700px){*/
+/*    cercle{*/
+/*        display : none;*/
+/*    }*/
 
-    rightTitle{
-        display : none;
-    }
+/*    rightTitle{*/
+/*        display : none;*/
+/*    }*/
 
-    body{
-        overflow-x: scroll;
-    }
+/*    body{*/
+/*        overflow-x: scroll;*/
+/*    }*/
 
-    h5{
-        padding-right:10vw;
-    }
+/*    h5{*/
+/*        padding-right:10vw;*/
+/*    }*/
 
 
-}
+/*}*/
 
-@media (max-height:600px){
-    #logo{
-        display:none;
-    }
+/*@media (max-height:600px){*/
+/*    #logo{*/
+/*        display:none;*/
+/*    }*/
 
-    #maincontent{
-        padding-top:50vh;
-    }
-}
+/*    #maincontent{*/
+/*        padding-top:50vh;*/
+/*    }*/
+/*}*/
 
 @keyframes fade-in {
     0%,37.5% {
